@@ -1,0 +1,2 @@
+ppposif.c:311:10:sys_now	0	static
+ppposif.c:316:10:sys_jiffies	0	static

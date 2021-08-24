@@ -1,0 +1,14 @@
+at_util.c:38:10:ATutil_ipow	0	static
+at_util.c:85:10:ATutil_convertHexaStringToInt32	40	static
+at_util.c:55:10:ATutil_convertStringToInt	32	static
+at_util.c:147:9:ATutil_convertHexaStringToInt64	32	static
+at_util.c:208:10:ATutil_convertBinStringToInt32	24	static
+at_util.c:222:9:ATutil_isNegative	0	static
+at_util.c:242:6:ATutil_convertStringToUpperCase	0	static
+at_util.c:264:9:ATutil_convert_uint8_to_binary_string	12	static
+at_util.c:294:10:ATutil_remove_quotes	24	static
+at_util.c:325:10:ATutil_extract_str_from_quotes	24	static,ignoring_inline_asm
+at_util.c:371:10:ATutil_extract_hex_value_from_quotes	56	static
+at_util.c:390:10:ATutil_extract_bin_value_from_quotes	56	static
+at_util.c:412:10:ATutil_convert_T3412_to_seconds	0	static
+at_util.c:445:10:ATutil_convert_T3324_to_seconds	0	static

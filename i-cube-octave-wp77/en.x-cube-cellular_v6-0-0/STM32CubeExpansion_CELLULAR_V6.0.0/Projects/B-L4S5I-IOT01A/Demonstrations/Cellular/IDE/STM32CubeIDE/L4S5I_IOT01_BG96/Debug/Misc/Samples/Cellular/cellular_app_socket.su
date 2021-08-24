@@ -1,0 +1,11 @@
+cellular_app_socket.c:132:6:cellular_app_distant_check	56	static
+cellular_app_socket.c:181:6:cellular_app_distant_update	0	static,ignoring_inline_asm
+cellular_app_socket.c:325:6:cellular_app_socket_is_nfm_sleep_requested	48	static
+cellular_app_socket.c:556:6:cellular_app_socket_close	24	static
+cellular_app_socket.c:380:6:cellular_app_socket_obtain	56	static
+cellular_app_socket.c:614:6:cellular_app_set_snd_buffer_len	24	static,ignoring_inline_asm
+cellular_app_socket.c:648:6:cellular_app_set_protocol	24	static,ignoring_inline_asm
+cellular_app_socket.c:687:6:cellular_app_distant_change	56	static,ignoring_inline_asm
+cellular_app_socket.c:793:6:cellular_app_socket_get_stat	0	static,ignoring_inline_asm
+cellular_app_socket.c:825:6:cellular_app_socket_reset_stat	0	static,ignoring_inline_asm
+cellular_app_socket.c:845:6:cellular_app_socket_init	0	static

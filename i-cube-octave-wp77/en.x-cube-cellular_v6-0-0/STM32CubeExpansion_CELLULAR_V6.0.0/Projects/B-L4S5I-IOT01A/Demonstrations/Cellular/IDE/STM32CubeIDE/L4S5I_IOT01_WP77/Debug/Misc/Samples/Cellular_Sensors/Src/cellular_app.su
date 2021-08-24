@@ -1,0 +1,4 @@
+cellular_app.c:80:13:cellular_app_ip_info_cb	16	static
+cellular_app.c:137:6:cellular_app_is_data_ready	0	static
+cellular_app.c:147:6:application_init	8	static
+cellular_app.c:180:6:application_start	8	static

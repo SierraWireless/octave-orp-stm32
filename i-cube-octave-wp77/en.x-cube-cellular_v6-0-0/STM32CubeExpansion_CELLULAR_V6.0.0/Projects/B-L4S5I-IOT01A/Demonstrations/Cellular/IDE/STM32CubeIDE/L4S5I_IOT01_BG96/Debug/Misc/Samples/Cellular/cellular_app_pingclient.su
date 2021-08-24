@@ -1,0 +1,8 @@
+cellular_app_pingclient.c:83:13:pingclient_thread	120	static
+cellular_app_pingclient.c:339:6:cellular_app_pingclient_send_msg	16	static
+cellular_app_pingclient.c:361:31:cellular_app_pingclient_get_status	0	static
+cellular_app_pingclient.c:375:6:cellular_app_pingclient_set_status	24	static
+cellular_app_pingclient.c:423:6:cellular_app_pingclient_distant_change	40	static
+cellular_app_pingclient.c:446:6:cellular_app_pingclient_display_status	40	static
+cellular_app_pingclient.c:510:6:cellular_app_pingclient_init	24	static
+cellular_app_pingclient.c:574:6:cellular_app_pingclient_start	32	static

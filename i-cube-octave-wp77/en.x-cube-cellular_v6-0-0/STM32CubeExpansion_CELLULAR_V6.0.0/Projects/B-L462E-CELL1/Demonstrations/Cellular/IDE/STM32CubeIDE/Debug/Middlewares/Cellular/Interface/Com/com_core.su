@@ -1,0 +1,4 @@
+com_core.c:64:13:com_core_cmd_help	8	static
+com_core.c:75:21:com_core_cmd	48	static
+com_core.c:140:6:com_init	8	static
+com_core.c:172:6:com_start	8	static

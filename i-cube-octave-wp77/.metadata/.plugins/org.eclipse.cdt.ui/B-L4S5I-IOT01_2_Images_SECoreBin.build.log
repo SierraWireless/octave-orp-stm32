@@ -1,0 +1,23 @@
+13:38:05 **** Build of configuration Debug for project B-L4S5I-IOT01_2_Images_SECoreBin ****
+make all 
+"../../prebuild.sh" "../.."
+prepareimage with windows executable
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe conf ../../../Inc/se_crypto_config.h
+SECBOOT_X509_ECDSA_WITHOUT_ENCRYPT_SHA256 selected
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe inject -k ../../../../2_Images_KMS_Blob/Binary/ECCKEY.txt -f ../../../Inc/kms_platf_objects_config.h.pattern -p @ECDSA_BLOB_KEY@ ../..\..\Inc\kms_platf_objects_config.h.tmp
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe inject -k ../../../../2_Images_KMS_Blob/Binary/OEM_KEY_COMPANY1_key_AES_CBC.bin -f ../..\..\Inc\kms_platf_objects_config.h.tmp -p @AES_BLOB_KEY@ ../..\..\Inc\kms_platf_objects_config.h
+[2104] Failed to execute script prepareimage
+Traceback (most recent call last):
+  File "prepareimage.py", line 861, in <module>
+  File "prepareimage.py", line 858, in args
+  File "prepareimage.py", line 593, in do_inject
+  File "keys.py", line 262, in load
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../2_Images_KMS_Blob/Binary/OEM_KEY_COMPANY1_key_AES_CBC.bin'
+../../prebuild.sh: line 68: P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe: No error
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe inject -k ../../../../2_Images_KMS_Blob/Binary/OEM_KEY_COMPANY1_key_AES_CBC.bin -f ../..\..\Inc\kms_platf_objects_config.h.tmp -p @AES_BLOB_KEY@ ../..\..\Inc\kms_platf_objects_config.h : failed
+make[1]: *** [makefile:94: pre-build] Error 1
+make: *** [makefile:62: all] Error 2
+"make all" terminated with exit code 2. Build might be incomplete.
+
+13:38:08 Build Failed. 2 errors, 0 warnings. (took 2s.770ms)
+

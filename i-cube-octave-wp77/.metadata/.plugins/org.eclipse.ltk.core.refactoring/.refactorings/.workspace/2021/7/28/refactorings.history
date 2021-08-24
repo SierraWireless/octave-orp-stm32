@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;STM32CubeExpansion_CELLULAR_V6.0.0/Middlewares/Third_Party/ORP&apos;" deleteContents="false" description="Delete resource &apos;STM32CubeExpansion_CELLULAR_V6.0.0/Middlewares/Third_Party/ORP&apos;" element1="/STM32CubeExpansion_CELLULAR_V6.0.0/Middlewares/Third_Party/ORP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1625490113809"/>
+</session>

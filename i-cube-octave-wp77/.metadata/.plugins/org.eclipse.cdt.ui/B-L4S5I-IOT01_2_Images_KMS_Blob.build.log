@@ -1,0 +1,31 @@
+13:37:50 **** Build of configuration Debug for project B-L4S5I-IOT01_2_Images_KMS_Blob ****
+make all 
+arm-none-eabi-gcc "P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Projects/B-L4S5I-IOT01A/Applications/BootLoader_KMS/2_Images_KMS_Blob/Src/kms_blob_example_keys.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4S5xx -DUSE_HAL_DRIVER -DUSE_STM32L4S5I_IOT01 -c -I../../../../../../../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc -I../../../../../../../../Drivers/BSP/B-L4S5I-IOT01A -I../../../../../../../../Drivers/BSP/Components/Common -I../../../../../../../../Middlewares/ST/STM32_Key_Management_Services/Core -I../../../../2_Images_SECoreBin/Inc -I../../../../../../../../Drivers/CMSIS/Include -Os -ffunction-sections -Wall -fstack-usage -MMD -MP -MF"Application/User/kms_blob_example_keys.d" -MT"Application/User/kms_blob_example_keys.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/kms_blob_example_keys.o"
+arm-none-eabi-gcc -o "KMS_Blob.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32L4S5VITx.ld" --specs=nosys.specs -Wl,-Map="KMS_Blob.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: KMS_Blob.elf
+ 
+arm-none-eabi-size   KMS_Blob.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1328	      0	      0	   1328	    530	KMS_Blob.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  KMS_Blob.elf  > "KMS_Blob.list"
+Finished building: KMS_Blob.list
+ 
+arm-none-eabi-objcopy  -O binary  KMS_Blob.elf  "KMS_Blob.bin"
+Finished building: KMS_Blob.bin
+ 
+arm-none-eabi-objcopy -O binary "KMS_Blob.elf" "../../KMS_Blob.bin"
+arm-none-eabi-size "KMS_Blob.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1328	      0	      0	   1328	    530	KMS_Blob.elf
+"../../postbuild.sh" "../../" "KMS_Blob" "1"
+Windows_NT
+prepareimage with windows executable
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe enc -k ../..//../Binary/OEM_KEY_COMPANY1_key_AES_CBC.bin -i ../..//../Binary/iv.bin ../..//KMS_Blob.bin ../..//../Binary/KMS_Blob.kmsu
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe sha256 ../..//KMS_Blob.bin ../..//../Binary/KMS_Blob.sign -p 16
+P:/STM/STM32_SWI/en.x-cube-aws_v2-1-1/STM32CubeExpansion_Cloud_AWS_V2.1.1/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe pack -k ../..//../Binary/ECCKEY.txt -m KMSB -r 28 -v 1 -i ../..//../Binary/iv.bin -f ../..//../Binary/KMS_Blob.kmsu -t ../..//../Binary/KMS_Blob.sign -o 320 ../..//../Binary/KMS_Blob.kmsb
+ 
+
+13:37:58 Build Finished. 0 errors, 0 warnings. (took 8s.55ms)
+

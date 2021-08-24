@@ -1,0 +1,13 @@
+port.c:259:13:prvPortStartFirstTask	0	static,ignoring_inline_asm
+port.c:693:13:vPortEnableVFP	0	static,ignoring_inline_asm
+port.c:218:13:prvTaskExitError	8	static,ignoring_inline_asm
+port.c:188:14:pxPortInitialiseStack	0	static
+port.c:241:6:SVC_Handler	0	static,ignoring_inline_asm
+port.c:394:6:vPortEndScheduler	0	static,ignoring_inline_asm
+port.c:401:6:vPortEnterCritical	0	static,ignoring_inline_asm
+port.c:416:6:vPortExitCritical	0	static,ignoring_inline_asm
+port.c:425:6:PendSV_Handler	0	static,ignoring_inline_asm
+port.c:481:6:SysTick_Handler	8	static,ignoring_inline_asm
+port.c:670:30:vPortSetupTimerInterrupt	0	static
+port.c:284:12:xPortStartScheduler	16	static,ignoring_inline_asm
+port.c:708:6:vPortValidateInterruptPriority	0	static,ignoring_inline_asm

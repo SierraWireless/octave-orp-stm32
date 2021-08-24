@@ -1,0 +1,13 @@
+cellular_service_cmd.c:2944:13:CST_cellular_direct_cmd_callback	0	static
+cellular_service_cmd.c:1109:13:CST_CMD_display_bitmap_name	24	static
+cellular_service_cmd.c:1055:17:CST_CMD_get_band	56	static
+cellular_service_cmd.c:1167:13:CST_ModemHelpCmd	16	static
+cellular_service_cmd.c:2953:13:cst_at_cmd_help	16	static
+cellular_service_cmd.c:366:13:CST_HelpCmd	16	static
+cellular_service_cmd.c:252:13:CST_setTextToStr	16	static
+cellular_service_cmd.c:403:21:CST_cmd	360	static,ignoring_inline_asm
+cellular_service_cmd.c:2967:21:cst_at_command_handle	8	static
+cellular_service_cmd.c:3000:21:CST_AtCmd	16	static
+cellular_service_cmd.c:1149:13:CST_CMD_display_seq_name.constprop	24	static
+cellular_service_cmd.c:1238:21:CST_ModemCmd	112	static
+cellular_service_cmd.c:3114:13:CST_cmd_cellular_service_start	8	static

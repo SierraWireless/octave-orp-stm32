@@ -1,0 +1,7 @@
+com_icc.c:329:16:com_icc_use_icc_desc	24	static
+com_icc.c:122:13:com_icc_datacache_cb	248	static,ignoring_inline_asm
+com_icc.c:575:9:com_icc	24	static,ignoring_inline_asm
+com_icc.c:647:9:com_icc_generic_access	56	static,ignoring_inline_asm
+com_icc.c:714:9:com_closeicc	16	static
+com_icc.c:732:6:com_icc_init	8	static
+com_icc.c:763:6:com_icc_start	0	static

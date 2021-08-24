@@ -1,0 +1,8 @@
+sysctrl_specific.c:70:18:SysCtrl_BG96_getDeviceDescriptor	40	static
+sysctrl_specific.c:102:18:SysCtrl_BG96_open_channel	8	static
+sysctrl_specific.c:131:18:SysCtrl_BG96_close_channel	8	static
+sysctrl_specific.c:147:18:SysCtrl_BG96_power_on	8	static
+sysctrl_specific.c:198:18:SysCtrl_BG96_power_off	8	static
+sysctrl_specific.c:229:18:SysCtrl_BG96_reset	8	static
+sysctrl_specific.c:261:18:SysCtrl_BG96_sim_select	8	static
+sysctrl_specific.c:345:18:SysCtrl_BG96_wakeup_from_PSM	8	static

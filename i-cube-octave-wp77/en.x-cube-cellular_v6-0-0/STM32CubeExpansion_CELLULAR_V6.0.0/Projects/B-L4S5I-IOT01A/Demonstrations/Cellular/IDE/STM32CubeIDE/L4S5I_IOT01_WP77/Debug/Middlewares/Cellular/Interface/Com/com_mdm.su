@@ -1,0 +1,9 @@
+com_mdm.c:75:6:com_mdm_cb	0	static
+com_mdm.c:95:11:com_mdm_subscribe_event	8	static
+com_mdm.c:131:9:com_mdm_open	0	static
+com_mdm.c:159:11:com_mdm_send	16	static
+com_mdm.c:197:11:com_mdm_transaction	32	static
+com_mdm.c:238:11:com_mdm_receive	24	static
+com_mdm.c:271:11:com_mdm_close	8	static
+com_mdm.c:317:6:com_mdm_init	0	static
+com_mdm.c:333:6:com_mdm_start	0	static,ignoring_inline_asm

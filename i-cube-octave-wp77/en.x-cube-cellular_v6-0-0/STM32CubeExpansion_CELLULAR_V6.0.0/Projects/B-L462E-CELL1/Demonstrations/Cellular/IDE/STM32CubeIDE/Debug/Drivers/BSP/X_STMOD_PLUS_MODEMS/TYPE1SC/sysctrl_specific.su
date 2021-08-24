@@ -1,0 +1,14 @@
+sysctrl_specific.c:492:13:TYPE1SC_LP_disable_modem_uart	48	static
+sysctrl_specific.c:397:13:enable_RING_wait_for_falling	32	static
+sysctrl_specific.c:78:18:SysCtrl_TYPE1SC_getDeviceDescriptor	40	static
+sysctrl_specific.c:167:18:SysCtrl_TYPE1SC_close_channel	16	static
+sysctrl_specific.c:231:18:SysCtrl_TYPE1SC_power_on	16	static
+sysctrl_specific.c:252:18:SysCtrl_TYPE1SC_power_off	40	static
+sysctrl_specific.c:269:18:SysCtrl_TYPE1SC_reset	8	static
+sysctrl_specific.c:285:18:SysCtrl_TYPE1SC_sim_select	0	static
+sysctrl_specific.c:296:18:SysCtrl_TYPE1SC_request_suspend_channel	8	static
+sysctrl_specific.c:320:18:SysCtrl_TYPE1SC_complete_suspend_channel	32	static
+sysctrl_specific.c:701:18:enable_UART	48	static
+sysctrl_specific.c:116:18:SysCtrl_TYPE1SC_open_channel	40	static
+sysctrl_specific.c:355:18:SysCtrl_TYPE1SC_resume_channel	64	static
+sysctrl_specific.c:444:18:SysCtrl_TYPE1SC_reinit_channel	16	static

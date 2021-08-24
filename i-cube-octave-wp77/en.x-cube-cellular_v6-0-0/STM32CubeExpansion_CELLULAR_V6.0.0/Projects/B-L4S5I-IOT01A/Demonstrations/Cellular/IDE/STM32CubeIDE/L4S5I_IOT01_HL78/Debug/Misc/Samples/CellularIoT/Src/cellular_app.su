@@ -1,0 +1,9 @@
+cellular_app.c:99:13:cellular_app_ip_info_cb	16	static
+cellular_app.c:155:6:cellular_app_is_data_ready	0	static
+cellular_app.c:165:6:cellular_app_get_performance_status	0	static
+cellular_app.c:176:6:cellular_app_performance_start	32	static
+cellular_app.c:241:31:cellular_app_get_status	0	static
+cellular_app.c:278:6:cellular_app_set_status	24	static,ignoring_inline_asm
+cellular_app.c:316:6:cellular_app_set_period	24	static,ignoring_inline_asm
+cellular_app.c:347:6:application_init	8	static
+cellular_app.c:390:6:application_start	8	static

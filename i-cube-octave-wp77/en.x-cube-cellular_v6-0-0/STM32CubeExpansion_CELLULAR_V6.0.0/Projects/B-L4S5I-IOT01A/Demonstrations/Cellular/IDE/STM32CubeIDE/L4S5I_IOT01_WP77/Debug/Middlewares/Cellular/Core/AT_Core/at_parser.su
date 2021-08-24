@@ -1,0 +1,13 @@
+at_parser.c:461:13:reset_current_command	16	static
+at_parser.c:447:13:reset_parser_context	16	static
+at_parser.c:470:13:display_buffer	24	static
+at_parser.c:136:13:write_data2buffer	16	static
+at_parser.c:91:13:ATParser_initParsers	0	static
+at_parser.c:96:6:ATParser_init	16	static
+at_parser.c:114:7:ATParser_process_request	16	static
+at_parser.c:276:19:ATParser_get_ATcmd	56	static
+at_parser.c:337:17:ATParser_parse_rsp	56	static
+at_parser.c:413:13:ATParser_get_rsp	16	static
+at_parser.c:425:13:ATParser_get_urc	0	static
+at_parser.c:433:13:ATParser_get_error	0	static
+at_parser.c:441:6:ATParser_abort_request	0	static

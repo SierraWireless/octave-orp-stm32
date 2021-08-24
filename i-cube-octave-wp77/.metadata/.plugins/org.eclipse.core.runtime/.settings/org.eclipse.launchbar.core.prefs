@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:L4S5I_IOT01_WP77 Debug (1),org.eclipse.launchbar.core.descriptorType.default\:L4S5I_IOT01_WP77 Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_STSAFE_Provisioning\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_STSAFE_Provisioning\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_aws_demos/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_aws_demos/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_aws_demos_osc/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:B-L4S5I-IOT01_aws_demos_osc/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-H755ZI_aws_demos_CM4/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-H755ZI_aws_demos_CM4/activeLaunchTarget=null\:---
+org.eclipse.launchbar.core.descriptorType.default\:L4S5I_IOT01_WP77\ Debug\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:L4S5I_IOT01_WP77\ Debug\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:L4S5I_IOT01_WP77\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

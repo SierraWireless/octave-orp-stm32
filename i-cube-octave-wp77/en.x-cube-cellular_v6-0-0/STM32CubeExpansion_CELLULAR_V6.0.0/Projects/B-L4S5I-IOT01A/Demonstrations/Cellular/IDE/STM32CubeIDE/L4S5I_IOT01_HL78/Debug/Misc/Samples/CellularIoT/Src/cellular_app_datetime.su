@@ -1,0 +1,6 @@
+cellular_app_datetime.c:103:6:cellular_app_datetime_str_convert	40	static
+cellular_app_datetime.c:334:6:cellular_app_datetime_set	40	static
+cellular_app_datetime.c:377:6:cellular_app_datetime_get	40	static
+cellular_app_datetime.c:414:6:cellular_app_datetime_set_cb_registration	0	static
+cellular_app_datetime.c:429:6:cellular_app_datetime_init	0	static
+cellular_app_datetime.c:442:6:cellular_app_datetime_start	0	static,ignoring_inline_asm

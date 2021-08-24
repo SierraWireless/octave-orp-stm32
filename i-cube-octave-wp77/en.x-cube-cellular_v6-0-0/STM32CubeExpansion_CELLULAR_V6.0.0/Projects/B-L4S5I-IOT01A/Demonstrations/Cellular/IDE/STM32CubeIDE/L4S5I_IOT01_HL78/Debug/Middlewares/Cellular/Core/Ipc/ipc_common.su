@@ -1,0 +1,12 @@
+ipc_common.c:48:14:IPC_init	0	static
+ipc_common.c:80:14:IPC_deinit	0	static
+ipc_common.c:104:14:IPC_open	12	static
+ipc_common.c:144:14:IPC_close	0	static
+ipc_common.c:161:14:IPC_reset	0	static
+ipc_common.c:178:14:IPC_abort	0	static
+ipc_common.c:195:14:IPC_select	0	static
+ipc_common.c:212:15:IPC_get_other_channel	0	static
+ipc_common.c:223:14:IPC_send	0	static
+ipc_common.c:242:14:IPC_receive	0	static
+ipc_common.c:263:14:IPC_streamReceive	0	static
+ipc_common.c:292:6:IPC_DumpRXQueue	0	static,ignoring_inline_asm

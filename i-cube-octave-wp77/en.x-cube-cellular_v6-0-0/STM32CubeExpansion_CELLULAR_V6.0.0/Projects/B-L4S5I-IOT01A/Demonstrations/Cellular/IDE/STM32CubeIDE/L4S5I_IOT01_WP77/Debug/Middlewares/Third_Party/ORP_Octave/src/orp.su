@@ -1,0 +1,10 @@
+orp.c:93:9:orp_open	0	static
+orp.c:108:11:orp_subscribe_event	0	static
+orp.c:127:11:orp_create_resource	40	static
+orp.c:150:11:orp_create_handler	32	static
+orp.c:173:11:orp_get_resource	72	static
+orp.c:205:11:orp_set_numeric_resource	40	static
+orp.c:231:11:orp_set_json_resource	40	static
+orp.c:255:11:orp_set_bool_resource	32	static
+orp.c:285:11:orp_receive	0	static
+orp.c:300:18:orpResponseDecode	16	static

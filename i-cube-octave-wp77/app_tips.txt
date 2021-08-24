@@ -1,0 +1,102 @@
+#if defined(USE_COM_MDM)
+#include "com_mdm.h"
+#endif /* defined(USE_COM_MDM) */
+
+#if defined(USE_COM_MDM)
+extern uint8_t currentHandle;
+void application_mdm_cb(void);
+#endif /* defined(USE_COM_MDM) */
+
+#if defined(USE_COM_MDM)
+void com_mdm_thread (void);
+#endif /* defined(USE_COM_MDM) */
+
+SRC
+
+#if defined(USE_COM_MDM)
+static uint32_t mdm_urc_counter = 0U;
+bool mdm_test_transaction = false;
+bool mdm_test_send = true;
+bool mdm_test_handler = true;
+bool first_boot = true;
+#endif /* defined(USE_COM_MDM) */
+
+#if defined(USE_COM_MDM)
+void application_mdm_cb(void)
+{
+	/* TODO: If a URC is received before subscription,
+	 * the state machine freezes as its not able to extract/free the buffes
+	 */
+    mdm_urc_counter++;
+}
+
+void com_mdm_thread (void)
+{
+  com_err_t com_err;
+  //com_char_t tx_command[40] = "IJ00Pout/sensor_values";
+  com_char_t tx_command[40] = "ON00Pout/Sensors";
+  com_char_t rx_command[250] = {0};
+  com_char_t tx_command1[40] = "H.00Pout/Sensors";
+  com_char_t txTr_command[100] = "PJ00Pout/sensor_values,D{\\x22Humidity\\x22:60,\\x22Pressure\\x22:10,\\x22Temp\\x22:30}";
+  com_char_t rxTr_command[40] = {0};
+  int32_t mdm_error_code;
+  //PRINT_FORCE("The value of AVMS connection status is %d", WP77_shared.avms_connection_status)
+  /* Thread main loop treatment */
+  if (mdm_test_send == true)
+  {
+	  /* COM MDM SEND TEST */
+	  mdm_test_send  = false;
+	  PRINT_FORCE(" *** call com_mdm_send to create a ORP resource***")
+	  com_err = com_mdm_send(currentHandle, tx_command, strlen((CRC_CHAR_t *)tx_command), &mdm_error_code);
+	  PRINT_FORCE(" send return %ld", com_err)
+	  PRINT_FORCE(" error_code = %ld", mdm_error_code)
+	  PRINT_FORCE(" *** end of com_mdm_send ***")
+  }
+  if (mdm_test_handler == true)
+  {
+ 	  /* To Subscribe to handler by using COM MDM SEND API */
+ 	  mdm_test_handler  = false;
+ 	  PRINT_FORCE(" *** call com_mdm_send to subscribe to handler ***")
+ 	  com_err = com_mdm_send(currentHandle, tx_command1, strlen((CRC_CHAR_t *)tx_command1), &mdm_error_code);
+ 	  PRINT_FORCE(" send return %ld", com_err)
+ 	  PRINT_FORCE(" error_code = %ld", mdm_error_code)
+ 	  PRINT_FORCE(" *** end of com_mdm_send ***")
+  }
+  if (mdm_test_transaction == true)
+  {
+	  /* COM MDM TRANSACTION TEST */
+	  //mdm_test_transaction = false;
+	  PRINT_FORCE(" *** call com_mdm_transaction ***")
+	  com_err =  com_mdm_transaction(currentHandle, txTr_command, strlen((CRC_CHAR_t *)txTr_command),
+			  rxTr_command, 40, &mdm_error_code);
+	  PRINT_FORCE(" transaction return %ld", com_err)
+	  PRINT_FORCE(" error_code = %ld", mdm_error_code)
+	  PRINT_FORCE(" buffer received = %s", rxTr_command)
+	  PRINT_FORCE(" *** end of com_mdm_transaction ***")
+  }
+  if (mdm_urc_counter > 0)
+  {
+	  /* COM MDM RECEIVE */
+	  mdm_urc_counter--;
+	  com_err =  com_mdm_receive(currentHandle, rx_command, strlen((CRC_CHAR_t *)rx_command), &mdm_error_code);
+	  PRINT_FORCE(" receive return %ld", com_err)
+	  PRINT_FORCE(" error_code = %ld", mdm_error_code)
+	  PRINT_FORCE(" buffer received = %s", rx_command)
+	  PRINT_FORCE(" *** end of com_mdm_receive ***")
+  }
+}
+#endif /* defined(USE_COM_MDM) */
+
+
+
+#if defined(USE_COM_MDM)
+uint8_t currentHandle;
+#endif /* defined(USE_COM_MDM) */
+
+#if defined(USE_COM_MDM)
+com_err_t com_err;
+currentHandle = com_mdm_open();
+com_err = com_mdm_subscribe_event(currentHandle, application_mdm_cb);
+PRINT_FORCE(" Subscription to ORP callback handler returned %ld",com_err)
+#endif /* defined(USE_COM_MDM) */
+

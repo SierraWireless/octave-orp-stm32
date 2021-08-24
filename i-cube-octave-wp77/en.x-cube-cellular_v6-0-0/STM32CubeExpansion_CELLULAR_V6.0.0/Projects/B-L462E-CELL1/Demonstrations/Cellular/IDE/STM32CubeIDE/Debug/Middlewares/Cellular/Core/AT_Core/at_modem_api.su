@@ -1,0 +1,12 @@
+at_modem_api.c:66:13:atcc_initParsers	16	static
+at_modem_api.c:90:6:atcc_init	0	static
+at_modem_api.c:100:34:atcc_checkEndOfMsgCallback	0	static
+at_modem_api.c:113:13:atcc_getCmd	16	static
+at_modem_api.c:130:13:atcc_extractElement	24	static
+at_modem_api.c:152:17:atcc_analyzeCmd	16	static
+at_modem_api.c:170:17:atcc_analyzeParam	16	static
+at_modem_api.c:187:17:atcc_terminateCmd	16	static
+at_modem_api.c:204:13:atcc_get_rsp	16	static
+at_modem_api.c:220:13:atcc_get_urc	16	static
+at_modem_api.c:236:13:atcc_get_error	16	static
+at_modem_api.c:254:6:atcc_hw_event	0	static

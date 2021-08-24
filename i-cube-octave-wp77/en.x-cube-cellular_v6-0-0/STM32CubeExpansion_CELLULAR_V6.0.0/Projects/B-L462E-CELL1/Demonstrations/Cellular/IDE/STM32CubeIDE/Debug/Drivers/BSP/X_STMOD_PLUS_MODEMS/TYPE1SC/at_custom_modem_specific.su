@@ -1,0 +1,13 @@
+at_custom_modem_specific.c:2272:13:low_power_event	16	static
+at_custom_modem_specific.c:2175:13:type1sc_modem_reset.constprop	8	static
+at_custom_modem_specific.c:137:6:ATCustom_TYPE1SC_init	16	static
+at_custom_modem_specific.c:276:9:ATCustom_TYPE1SC_checkEndOfMsgCallback	0	static,ignoring_inline_asm
+at_custom_modem_specific.c:357:13:ATCustom_TYPE1SC_getCmd	48	static
+at_custom_modem_specific.c:1601:13:ATCustom_TYPE1SC_extractElement	16	static
+at_custom_modem_specific.c:1698:17:ATCustom_TYPE1SC_analyzeCmd	24	static
+at_custom_modem_specific.c:1943:17:ATCustom_TYPE1SC_analyzeParam	24	static
+at_custom_modem_specific.c:1962:17:ATCustom_TYPE1SC_terminateCmd	16	static
+at_custom_modem_specific.c:2005:13:ATCustom_TYPE1SC_get_rsp	24	static
+at_custom_modem_specific.c:2075:13:ATCustom_TYPE1SC_get_urc	16	static
+at_custom_modem_specific.c:2093:13:ATCustom_TYPE1SC_get_error	16	static
+at_custom_modem_specific.c:2111:13:ATCustom_TYPE1SC_hw_event	8	static

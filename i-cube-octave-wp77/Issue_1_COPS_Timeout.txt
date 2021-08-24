@@ -1,0 +1,487 @@
+[16:52:39:413] ===== X-Cube-Cellular version : X-CUBE-CELLULAR-6.0.0 =====
+[16:52:39:417] 
+[16:52:39:417] -----> New State: BOOT_STATE <-----
+[16:52:39:417] WP77 UART config: BaudRate=115200 / HW flow ctrl=0
+[16:52:39:417] *********** modem state : CA_MODEM_POWER_OFF
+[16:52:39:417] =====>CST_notif_callback (Data Cache event=0)
+[16:52:39:417] =====>CST_notif_callback (Data Cache event=3)
+[16:52:39:417] AUTOM TASK:  BOOT_STATE - BOOT_EVENT
+[16:52:39:449] *********** CST_boot_event_mngt ********
+[16:52:39:449] -----> New State: MODEM_INIT_STATE <-----
+[16:52:39:449] AUTOM TASK:  MODEM_INIT_STATE - MODEM_INIT_EVENT
+[16:52:39:449] *********** CST_init_state_mngt ********
+[16:52:39:449] SysCtrl_WP77:!!! Modem Powering On !!!
+[16:52:39:648] SysCtrl_WP77:Waiting 30000 millisec for modem running...
+[16:53:09:391] SysCtrl_WP77:...done
+[16:53:09:391]     ATParser:*** SEND (size=11) ***
+[16:53:09:391] AT+IFC=0,0<CR>
+[16:53:09:391]     AT+IFC=0,0<CR><CR><LF>
+[16:53:09:391]     OK<CR><LF>
+[16:53:09:391]     ATParser:*** SEND (size=3) ***
+[16:53:09:391] AT<CR>
+[16:53:09:407]     AT<CR><CR><LF>
+[16:53:09:407]     OK<CR><LF>
+[16:53:09:407] WP77:modem synchro established, proceed to normal power sequence
+[16:53:09:438]         ATParser:*** SEND (size=5) ***
+[16:53:09:438] ATE0<CR>
+[16:53:09:438]     ATE0<CR><CR><LF>
+[16:53:09:438]     OK<CR><LF>
+[16:53:09:438]     ATParser:*** SEND (size=10) ***
+[16:53:09:438] AT+CMEE=1<CR>
+[16:53:09:438]     <CR><LF>
+[16:53:09:438]     OK<CR><LF>
+[16:53:09:438]     ATParser:*** SEND (size=5) ***
+[16:53:09:453] ATV1<CR>
+[16:53:09:453]     <CR><LF>
+[16:53:09:453]     OK<CR><LF>
+[16:53:09:453]     ATParser:*** SEND (size=6) ***
+[16:53:09:453] AT&D0<CR>
+[16:53:09:453]     <CR><LF>
+[16:53:09:453]     OK<CR><LF>
+[16:53:09:453]     ATParser:*** SEND (size=8) ***
+[16:53:09:491] AT+CGMR<CR>
+[16:53:09:491]     <CR><LF>
+[16:53:09:491]     SWI9X06Y_02.35.02.00 5208b3 jenkins 2020/06/10 00:30:12<CR><LF>
+[16:53:09:491]     <CR><LF>
+[16:53:09:491]     OK<CR><LF>
+[16:53:09:491]     ATParser:*** SEND (size=12) ***
+[16:53:09:491] AT+CFUN=0,0<CR>
+[16:53:09:723]     <CR><LF>
+[16:53:09:723]     OK<CR><LF>
+[16:53:09:723]     ATParser:*** SEND (size=11) ***
+[16:53:09:723] AT+CPSMS=0<CR>
+[16:53:09:723]     <CR><LF>
+[16:53:09:723]     +CREG: 0<CR><LF>
+[16:53:09:723] ATCModem:NetworkState (CS) = NOT_REGISTERED_NOT_SEARCHING
+[16:53:09:723]     <CR><LF>
+[16:53:09:723]     +CGREG: 0<CR><LF>
+[16:53:09:754] ATCModem:NetworkState (GPRS) = NOT_REGISTERED_NOT_SEARCHING
+[16:53:09:754]     <CR><LF>
+[16:53:09:754]     +CEREG: 0<CR><LF>
+[16:53:09:754] ATCModem:NetworkState (EPS) = NOT_REGISTERED_NOT_SEARCHING
+[16:53:09:754]     <CR><LF>
+[16:53:09:754]     OK<CR><LF>
+[16:53:09:754] WP77:>>>>> WP77 mode and bands configuration <<<<<
+[16:53:09:754] WP77:>>>>> ................................. <<<<<
+[16:53:09:792] =====>CST_notif_callback (Data Cache event=0)
+[16:53:09:792] =====>CST_notif_callback (Data Cache event=0)
+[16:53:09:792] *********** modem state : CA_MODEM_STATE_POWERED_ON
+[16:53:09:792] *********** CST_modem_sim_init ********
+[16:53:09:792] Modem Boot OK
+[16:53:09:792] CST_modem_sim_init : CS_sim_select sim slot nb 0
+[16:53:09:792] SysCtrl_WP77:MODEM SIM SOCKET SELECTED
+[16:53:09:808]     CST_modem_sim_init : check SIM First 
+[16:53:09:839]     ATParser:*** SEND (size=12) ***
+[16:53:09:839] AT+CFUN=4,0<CR>
+[16:53:09:839]     <CR><LF>
+[16:53:09:839]     OK<CR><LF>
+[16:53:09:839]     ATParser:*** SEND (size=8) ***
+[16:53:09:839] AT+CCID<CR>
+[16:53:10:055]     <CR><LF>
+[16:53:10:055]     +CCID: 8933201515450350077<CR><LF>
+[16:53:10:055]     <CR><LF>
+[16:53:10:055]     OK<CR><LF>
+[16:53:10:055]     ATParser:*** SEND (size=9) ***
+[16:53:10:055] AT+CPIN?<CR>
+[16:53:10:055]     <CR><LF>
+[16:53:10:055]     +CPIN: READY<CR><LF>
+[16:53:10:093] ATCModem:CPIN READY
+[16:53:10:093]     <CR><LF>
+[16:53:10:093]     OK<CR><LF>
+[16:53:10:093] WP77:SIM is ready, unlock sequence
+[16:53:10:093]         ATParser:*** SEND (size=9) ***
+[16:53:10:093] AT+CPIN?<CR>
+[16:53:10:093]     <CR><LF>
+[16:53:10:093]     +CPIN: READY<CR><LF>
+[16:53:10:108] ATCModem:CPIN READY
+[16:53:10:108]     <CR><LF>
+[16:53:10:108]     OK<CR><LF>
+[16:53:10:108] WP77:CPIN not required
+[16:53:10:108]         ATParser:*** SEND (size=12) ***
+[16:53:10:108] AT+CGDCONT?<CR>
+[16:53:10:147]     <CR><LF>
+[16:53:10:147]     +CGDCONT: 1,"IP","iot.swir","0.0.0.0",0,0,0,0<CR><LF>
+[16:53:10:147]     <CR><LF>
+[16:53:10:147]     OK<CR><LF>
+[16:53:10:147] =====>CST_notif_callback (Data Cache event=6)
+[16:53:10:147]     ATParser:*** SEND (size=8) ***
+[16:53:10:147] AT+CIMI<CR>
+[16:53:10:147]     <CR><LF>
+[16:53:10:147]     208201545035007<CR><LF>
+[16:53:10:163]     <CR><LF>
+[16:53:10:163]     OK<CR><LF>
+[16:53:10:163]  -IMSI: 208201545035007
+[16:53:10:163]  -MMC/MNC: 20820
+[16:53:10:163]  -Found corresponding APN: "mmsbouygtel.com" in table
+[16:53:10:163] =====>CST_notif_callback (Data Cache event=6)
+[16:53:10:163] CST_modem_sim_init : call CST_modem_define_pdn with APN in table: "mmsbouygtel.
+com"
+[16:53:10:193] ATCModem:user cid = 1, modem cid = 1
+[16:53:10:193]     ATParser:*** SEND (size=36) ***
+[16:53:10:193] AT+CGDCONT=1,"IP","mmsbouygtel.com"<CR>
+[16:53:10:231]     <CR><LF>
+[16:53:10:231]     OK<CR><LF>
+[16:53:10:231]     ATParser:*** SEND (size=12) ***
+[16:53:10:231] AT+CFUN=1,0<CR>
+[16:53:10:231]     <CR><LF>
+[16:53:10:231]     OK<CR><LF>
+[16:53:10:231]     ATParser:*** SEND (size=8) ***
+[16:53:10:231] AT+CCID<CR>
+[16:53:10:371]     <CR><LF>
+[16:53:10:371]     +CCID: 8933201515450350077<CR><LF>
+[16:53:10:371]     <CR><LF>
+[16:53:10:371]     OK<CR><LF>
+[16:53:10:377]     <CR><LF>
+[16:53:10:377]     +CREG: 2<CR><LF>
+[16:53:10:377] ATCModem:NetworkState (CS) = NOT_REGISTERED_SEARCHING
+[16:53:10:377]     <CR><LF>
+[16:53:10:377]     +CGREG: 2<CR><LF>
+[16:53:10:408] ATCModem:NetworkState (GPRS) = NOT_REGISTERED_SEARCHING
+[16:53:10:408]     <CR><LF>
+[16:53:10:408]     +CEREG: 2<CR><LF>
+[16:53:10:408] ATCModem:NetworkState (EPS) = NOT_REGISTERED_SEARCHING
+[16:53:10:408]     ATParser:*** SEND (size=9) ***
+[16:53:10:408] AT+CPIN?<CR>
+[16:53:10:408]     <CR><LF>
+[16:53:10:408]     +CPIN: READY<CR><LF>
+[16:53:10:424] ATCModem:CPIN READY
+[16:53:10:424]     <CR><LF>
+[16:53:10:424]     OK<CR><LF>
+[16:53:10:424] WP77:SIM is ready, unlock sequence
+[16:53:10:424]         ATParser:*** SEND (size=9) ***
+[16:53:10:455] AT+CPIN?<CR>
+[16:53:10:455]     <CR><LF>
+[16:53:10:455]     +CPIN: READY<CR><LF>
+[16:53:10:455] ATCModem:CPIN READY
+[16:53:10:455]     <CR><LF>
+[16:53:10:455]     OK<CR><LF>
+[16:53:10:471] WP77:CPIN not required
+[16:53:10:472]         ATParser:*** SEND (size=12) ***
+[16:53:10:472] AT+CGDCONT?<CR>
+[16:53:10:472]     <CR><LF>
+[16:53:10:477]     +CGDCONT: 1,"IP","mmsbouygtel.com","0.0.0.0",0,0,0,0<CR><LF>
+[16:53:10:477]     <CR><LF>
+[16:53:10:477]     OK<CR><LF>
+[16:53:10:477] Subscribe URC events: Network registration
+[16:53:10:508]     ATParser:*** SEND (size=10) ***
+[16:53:10:508] AT+CREG=2<CR>
+[16:53:10:508]     <CR><LF>
+[16:53:10:508]     OK<CR><LF>
+[16:53:10:508]     ATParser:*** SEND (size=11) ***
+[16:53:10:508] AT+CGREG=2<CR>
+[16:53:10:508]     <CR><LF>
+[16:53:10:524]     OK<CR><LF>
+[16:53:10:524]     ATParser:*** SEND (size=11) ***
+[16:53:10:524] AT+CEREG=2<CR>
+[16:53:10:524]     <CR><LF>
+[16:53:10:524]     OK<CR><LF>
+[16:53:10:524] Subscribe URC events: Location info
+[16:53:10:524]                 ATParser:*** SEND (size=7) ***
+[16:53:10:524] AT+GSN<CR>
+[16:53:10:555]     <CR><LF>
+[16:53:10:555]     352653090211921<CR><LF>
+[16:53:10:555]     <CR><LF>
+[16:53:10:555]     OK<CR><LF>
+[16:53:10:555]  -IMEI: 352653090211921
+[16:53:10:555]     ATParser:*** SEND (size=8) ***
+[16:53:10:555] AT+CGMI<CR>
+[16:53:10:555]     <CR><LF>
+[16:53:10:555]     Sierra Wireless, Incorporated<CR><LF>
+[16:53:10:571]     <CR><LF>
+[16:53:10:571]     OK<CR><LF>
+[16:53:10:571]  -MANUFACTURER: Sierra Wireless
+[16:53:10:571]     ATParser:*** SEND (size=8) ***
+[16:53:10:577] AT+CGMM<CR>
+[16:53:10:577]     <CR><LF>
+[16:53:10:577]     WP7702<CR><LF>
+[16:53:10:577]     <CR><LF>
+[16:53:10:609]     OK<CR><LF>
+[16:53:10:609]  -MODEL: WP7702
+[16:53:10:609]     ATParser:*** SEND (size=8) ***
+[16:53:10:609] AT+CGMR<CR>
+[16:53:10:609]     <CR><LF>
+[16:53:10:609]     SWI9X06Y_02.35.02.00 5208b3 jenkins 2020/06/10 00:30:12<CR><LF>
+[16:53:10:609]     <CR><LF>
+[16:53:10:609]     OK<CR><LF>
+[16:53:10:609]  -REVISION: SWI9X06Y_02.35.02.00 5208b3 jenkins 2020/06/10 00
+[16:53:10:625]     ATParser:*** SEND (size=8) ***
+[16:53:10:626] AT+CGSN<CR>
+[16:53:10:626]     <CR><LF>
+[16:53:10:626]     352653090211921<CR><LF>
+[16:53:10:626]     <CR><LF>
+[16:53:10:626]     OK<CR><LF>
+[16:53:10:626]  -SERIAL NBR: 352653090211921
+[16:53:10:657]     ATParser:*** SEND (size=8) ***
+[16:53:10:657] AT+CCID<CR>
+[16:53:10:756]     <CR><LF>
+[16:53:10:756]     +CCID: 8933201515450350077<CR><LF>
+[16:53:10:756]     <CR><LF>
+[16:53:10:756]     OK<CR><LF>
+[16:53:10:756]  -ICCID: 8933201515450350077
+[16:53:10:756] =====>CST_notif_callback (Data Cache event=0)
+[16:53:10:756] =====>CST_notif_callback (Data Cache event=4)
+[16:53:10:756]     ATParser:*** SEND (size=8) ***
+[16:53:10:794] AT+CIMI<CR>
+[16:53:10:794]     <CR><LF>
+[16:53:10:794]     208201545035007<CR><LF>
+[16:53:10:794]     <CR><LF>
+[16:53:10:794]     OK<CR><LF>
+[16:53:10:794]  -IMSI: 208201545035007
+[16:53:10:794] =====>CST_notif_callback (Data Cache event=3)
+[16:53:10:794] =====>CST_notif_callback (Data Cache event=4)
+[16:53:10:794] -----> New State: MODEM_READY_STATE <-----
+[16:53:10:794] Subscribe modems events
+[16:53:10:794]     AUTOM TASK:  MODEM_READY_STATE - MODEM_READY_EVENT
+[16:53:10:794] === CST_net_register_mngt ===
+[16:53:10:825]     ATParser:*** SEND (size=9) ***
+[16:53:10:825] AT+COPS?<CR>
+[16:53:10:825]     <CR><LF>
+[16:53:10:825]     +COPS: 0<CR><LF>
+[16:53:10:825]     <CR><LF>
+[16:53:10:825]     OK<CR><LF>
+[16:53:10:825]     ATParser:*** SEND (size=10) ***
+[16:53:10:825] AT+COPS=0<CR>
+[16:53:10:856]     <CR><LF>
+[16:53:10:856]     OK<CR><LF>
+[16:53:10:856]     ATParser:*** SEND (size=10) ***
+[16:53:10:856] AT+CEREG?<CR>
+[16:53:10:856]     <CR><LF>
+[16:53:10:856]     +CEREG: 2,2<CR><LF>
+[16:53:10:856] ATCModem:NetworkState (EPS) = NOT_REGISTERED_SEARCHING
+[16:53:10:856]     <CR><LF>
+[16:53:10:856]     OK<CR><LF>
+[16:53:10:856]     ATParser:*** SEND (size=9) ***
+[16:53:10:894] AT+CREG?<CR>
+[16:53:10:894]     <CR><LF>
+[16:53:10:894]     +CREG: 2,2<CR><LF>
+[16:53:10:894] ATCModem:NetworkState (CS) = NOT_REGISTERED_SEARCHING
+[16:53:10:894]     <CR><LF>
+[16:53:10:894]     OK<CR><LF>
+[16:53:10:894]     ATParser:*** SEND (size=10) ***
+[16:53:10:894] AT+CGREG?<CR>
+[16:53:10:894]     <CR><LF>
+[16:53:10:894]     +CGREG: 2,4<CR><LF>
+[16:53:10:894] ATCModem:NetworkState (GPRS) = UNKNOWN
+[16:53:10:894]     <CR><LF>
+[16:53:10:894]     OK<CR><LF>
+[16:53:10:941]     ATParser:*** SEND (size=10) ***
+[16:53:10:941] AT+CGATT?<CR>
+[16:53:10:941]     <CR><LF>
+[16:53:10:941]     +CGATT: 0<CR><LF>
+[16:53:10:941]     <CR><LF>
+[16:53:10:941]     OK<CR><LF>
+[16:53:10:941] =====>CST_notif_callback (Data Cache event=0)
+[16:53:10:941] *********** modem state : CA_MODEM_NETWORK_REGISTERED
+[16:53:10:941] -----> New State: WAITING_FOR_SIGNAL_QUALITY_OK_STATE <-----
+[16:53:10:941] AUTOM TASK:  WAITING_FOR_SIGNAL_QUALITY_OK_STATE - SIGNAL_QUALITY_TO_CHECK_EVEN
+T
+[16:53:10:941] 
+[16:53:10:941]  ====> CST_waiting_for_signal_quality_ok_state <===== 
+[16:53:10:956]     ATParser:*** SEND (size=12) ***
+[16:53:10:994] AT!GSTATUS?<CR>
+[16:53:11:195]     <CR><LF>
+[16:53:11:195]     !GSTATUS: <CR><LF>
+[16:53:11:195]     Current Time:  31<SC><SC>Temperature: 37<CR><LF>
+[16:53:11:195]     Modem Mitigate Level: 0<SC><SC>ModemProc Mitigate Level: 0<SC><CR><LF>
+[16:53:11:195]     Reset Counter: 36<SC><SC>Mode:        ONLINE         <CR><LF>
+[16:53:11:226]     System mode:   LTE        <SC>PS state:    Not attached <CR><LF>
+[16:53:11:226]     IMS reg state: UNKNOWN         <SC>IMS mode:    Not Support  <CR><LF>
+[16:53:11:226]     IMS Srv State: UNKNOWN SMS,UNKNOWN VoIP<CR><LF>
+[16:53:11:226]     LTE band:      B20    <SC><SC>LTE bw:      10 MHz  <CR><LF>
+[16:53:11:257]     LTE Rx chan:   6200<SC><SC>LTE Tx chan: 24200<CR><LF>
+[16:53:11:257]     LTE CA state:  INACTIVE    <CR><LF>
+[16:53:11:257]     EMM state:     Reg Initiated  <SC>Waiting for NW <CR><LF>
+[16:53:11:257]     RRC state:     RRC Connected  <CR><LF>
+[16:53:11:257]     <CR><LF>
+[16:53:11:257]     PCC RxM RSSI:  -59<SC><SC>RSRP (dBm):  -89<CR><LF>
+[16:53:11:295]     PCC RxD RSSI:  -59<SC><SC>RSRP (dBm):  -140<CR><LF>
+[16:53:11:295]     Tx Power:      --<SC><SC>TAC:         77CC (30668)<CR><LF>
+[16:53:11:295]     RSRQ (dB):     -14<SC><SC>Cell ID:     07A1DA06 (128047622)<CR><LF>
+[16:53:11:295]     SINR (dB):      0.8<CR><LF>
+[16:53:11:295]     <CR><LF>
+[16:53:11:295]     OK<CR><LF>
+[16:53:11:295]     <CR><LFo
+[16:53:11:295]     +CREG: 1,"FFFE","7A1DA06",7<CR><LF>
+[16:53:11:326] ATCModem:NetworkState (CS) = REGISTERED_HOME_NETWORK
+[16:53:11:326] ATCModem:+CREG URC: lac=65534 =0xfffe
+[16:53:11:326] ATCModem:+CREG URC: ci=128047622 =0x7a1da06
+[16:53:11:326] ==================================CST_network_reg_callback
+[16:53:11:326] CST_location_info_callback
+[16:53:11:326] ATCuATParser:*** SEND (size=7) ***
+[16:53:11:326] AT+CSQ<CR>
+[16:53:11:326]     <CR><LF>
+[16:53:11:326]     +CGREG: 1,"FFFE","7A1DA06",7<CR><LF>
+[16:53:11:359] ATCModem:NetworkState (GPRS) = REGISTERED_HOME_NETWORK
+[16:53:11:360] ATCModem:+CGREG URC: lac=65534 =0xfffe
+[16:53:11:360] ATCModem:+CGREG URC: ci=128047622 =0x7a1da06
+[16:53:11:360] ==================================CST_network_reg_callback
+[16:53:11:360] CST_location_info_callback
+[16:53:11:360]     <CR><LF>
+[16:53:11:360]     +CEREG: 1,"77CC","68","7A1DA06",7<CR><LF>
+[16:53:11:395] ATCModem:NetworkState (EPS) = REGISTERED_HOME_NETWORK
+[16:53:11:395] ATCModem:+CEREG URC: tac=30668 =0x77cc
+[16:53:11:395] ATCModem:+CEREG URC: ci=104 =0x68
+[16:53:11:395] ==================================CST_network_reg_callback
+[16:53:11:395] CST_location_info_callback
+[16:53:11:395]     <CR><LF>
+[16:53:11:395]     +CSQ: 99,99<CR><LF>
+[16:53:11:395] ATCModem:+CSQ rssi=99
+[16:53:11:395] ATCModem:+CSQ ber=99
+[16:53:11:395]     <CR><LCo
+[16:53:11:411]     ATParser:*** SEND (size=11) ***
+[16:53:11:411] AT+KCELL=0<CR>
+[16:53:11:442]     OK<CR><LF>
+[16:53:11:442]     ATParser:*** SEND (size=11) ***
+[16:53:11:442] AT!SELRAT?<CR>
+[16:53:11:442]     <CR><LF>
+[16:53:11:442]     +KCELL:2,5,20820,07A1DA06,266,30668,51,17,1,6,1838,266,51,17<CR><LF>
+[16:53:11:442]     <CR><LF>
+[16:53:11:442]     OK<CR><LF>
+[16:53:11:442]  -Sig quality rssi : 99
+[16:53:11:442]  -Sig quality ber  : 99
+[16:53:11:442] AUTOM TASK:  WAITING_FOR_SIGNAL_QUALITY_OK_STATE - POLLING_TIMER_EVENT
+[16:53:11:442] 
+[16:53:11:442]  ====> CST_waiting_for_signal_quality_ok_state <===== 
+[16:53:11:442]     <CR><LF>
+[16:53:11:442]     !SELRAT: 00, Automatic<CR><LF>
+[16:53:11:458]     <CR><LF>
+[16:53:11:495]     OK<CR><LF>
+[16:53:11:495]     ATParser:*** SEND (size=12) ***
+[16:53:11:495] AT!GSTATUS?<CR>
+[16:53:11:495] =====>CST_notif_callback (Data Cache event=5)
+[16:53:11:495]  -Sig quality rssi : 0
+[16:53:11:495]  -Sig quality ber  : 0
+[16:53:11:495] -----> Start NW REG TIMEOUT TIMER   : 180000
+[16:53:11:495] -----> New State: WAITING_FOR_NETWORK_STATUS_STATE <-----
+[16:53:11:495] AUTOM TASK:  WAITING_FOR_NETWORK_STATUS_STATE - NETWORK_CALLBACK_EVENT
+[16:53:11:495] *********** CST_network_status_test_mngt ********
+[16:53:11:495]     ATParser:*** SEND (size=10) ***
+[16:53:11:495] AT+CEREG?<CR>
+[16:53:11:696]     <CR><LF>
+[16:53:11:696]     !GSTATUS: <CR><LF>
+[16:53:11:696]     Current Time:  31<SC><SC>Temperature: 37<CR><LF>
+[16:53:11:696]     Modem Mitigate Level: 0<SC><SC>ModemProc Mitigate Level: 0<SC><CR><LF>
+[16:53:11:696]     Reset Counter: 36<SC><SC>Mode:        ONLINE         <CR><LF>
+[16:53:11:696]     System mode:   LTE        <SC>PS state:    Attached     <CR><LF>
+[16:53:11:727]     IMS reg state: UNKNOWN         <SC>IMS mode:    Not Support  <CR><LF>
+[16:53:11:727]     IMS Srv State: UNKNOWN SMS,UNKNOWN VoIP<CR><LF>
+[16:53:11:727]     LTE band:      B20    <SC><SC>LTE bw:      10 MHz  <CR><LF>
+[16:53:11:727]     LTE Rx chan:   6200<SC><SC>LTE Tx chan: 24200<CR><LF>
+[16:53:11:727]     LTE CA state:  INACTIVE    <CR><LF>
+[16:53:11:758]     EMM state:     Registered     <SC>Normal Service <CR><LF>
+[16:53:11:758]     RRC state:     RRC Connected  <CR><LF>
+[16:53:11:758]     <CR><LF>
+[16:53:11:758]     PCC RxM RSSI:  -65<SC><SC>RSRP (dBm):  -90<CR><LF>
+[16:53:11:758]     PCC RxD RSSI:  -65<SC><SC>RSRP (dBm):  -140<CR><LF>
+[16:53:11:796]     Tx Power:      --<SC><SC>TAC:         77CC (30668)<CR><LF>
+[16:53:11:796]     RSRQ (dB):     -11<SC><SC>Cell ID:     07A1DA06 (128047622)<CR><LF>
+[16:53:11:796]     SINR (dB):      2.4<CR><LF>
+[16:53:11:796]     <CR><LF>
+[16:53:11:796]     OK<CR><LF>
+[16:53:11:796]     <CR><LF>
+[16:53:11:796]     +CEREG: 2,1,"77CC","68","7A1DA06",7<CR><LF>
+[16:53:11:796] ATCModem:NetworkState (EPS) = NOT_REGISTERED_SEARCHING
+[16:53:11:796] ATCModem:+CEREG URC: tac=1 =0x1
+[16:53:11:827] ATCModem:+CEREG URC: ci=30668 =0x77cc
+[16:53:11:827] ==================================CST_network_reg_callback
+[16:53:11:827] DataATParser:atcc_get_urc returned sAT+CREG?<CR>
+[16:53:11:827] CST_location_info_callback
+[16:53:11:827]     <CR><LF>
+[16:53:11:827]     OK<CR><LF>
+[16:53:11:827]     <CR><LF>
+[16:53:11:827]     +CREG: 2,1,"FFFE","7A1DA06",7<CR><LF>
+[16:53:11:827] ATCModem:NetworkState (CS) = NOT_REGISTERED_SEARCHING
+[16:53:11:859] ATCModem:+CREG URC: lac=1 =0x1
+[16:53:11:859] ATCModem:+CREG URC: ci=65534 =0xfffe
+[16:53:11:859] ==================================CST_network_reg_callback
+[16:53:11:859] ATCuATParser:*** SEND (size=10) ***
+[16:53:11:859] AT+CGREG?<CR>
+[16:53:11:859] CST_location_info_callback
+[16:53:11:859]     <CR><LF>
+[16:53:11:859]     OK<CR><LF>
+[16:53:11:859]     <CRo<LF>
+[16:53:11:859]     +CGREG: 2,4<CR><LF>
+[16:53:11:896] ATCModem:NetworkState (GPRS) = NOT_REGISTERED_SEARCHING
+[16:53:11:896] ATCModem:+CGREG URC: lac=4 =0x4
+[16:53:11:896] ==================================CST_network_reg_callback
+[16:53:11:896] CST_location_info_callback
+[16:53:11:896] ATCuATParser:*** SEND (size=9) ***
+[16:53:11:896] AT+COPS?<CR>
+[16:53:11:896]     <CR><LF>
+[16:53:11:896]     OK<CR><LF>
+[16:53:11:896]    u<CR><LF>
+[16:53:11:896]     +COPS: 0,0,"Bouygues Telecom",7<CR><LF>
+[16:53:11:896] WP77:UNEXPECTED MESSAGE RECEIVED
+[16:53:11:896]     <CR><LF>
+[16:53:11:927]     OK<CR><LF>
+[16:53:11:927]     ATParser:*** SEND (size=12) ***
+[16:53:11:927] AT!GSTATUS?<CR>
+[16:53:11:927]  -Sig quality rssi : 0
+[16:53:11:927]  -Sig quality ber  : 0
+[16:53:11:927] AUTOM TASK:  WAITING_FOR_NETWORK_STATUS_STATE - NETWORK_CALLBACK_EVENT
+[16:53:11:927] *********** CST_network_status_test_mngt ********
+[16:53:11:927]     ATParser:*** SEND (size=10) ***
+[16:53:11:927] AT+CEREG?<CR>
+[16:53:12:043]     <CR><LF>
+[16:53:12:043]     !GSTATUS: <CR><LF>
+[16:53:12:043]     Current Time:  32<SC><SC>Temperature: 37<CR><LF>
+[16:53:12:043]     Modem Mitigate Level: 0<SC><SC>ModemProc Mitigate Level: 0<SC><CR><LF>
+[16:53:12:076]     Reset Counter: 36<SC><SC>Mode:        ONLINE         <CR><LF>
+[16:53:12:076]     System mode:   LTE        <SC>PS state:    Attached     <CR><LF>
+[16:53:12:077]     IMS reg state: UNKNOWN         <SC>IMS mode:    Not Support  <CR><LF>
+[16:53:12:078]     IMS Srv State: UNKNOWN SMS,UNKNOWN VoIP<CR><LF>
+[16:53:12:106]     LTE band:      B20    <SC><SC>LTE bw:      10 MHz  <CR><LF>
+[16:53:12:107]     LTE Rx chan:   6200<SC><SC>LTE Tx chan: 24200<CR><LF>
+[16:53:12:108]     LTE CA state:  INACTIVE    <CR><LF>
+[16:53:12:109]     EMM state:     Registered     <SC>Normal Service <CR><LF>
+[16:53:12:110]     RRC state:     RRC Connected  <CR><LF>
+[16:53:12:137]     <CR><LF>
+[16:53:12:138]     PCC RxM RSSI:  -63<SC><SC>RSRP (dBm):  -90<CR><LF>
+[16:53:12:139]     PCC RxD RSSI:  -63<SC><SC>RSRP (dBm):  -140<CR><LF>
+[16:53:12:140]     Tx Power:      --<SC><SC>TAC:         77CC (30668)<CR><LF>
+[16:53:12:141]     RSRQ (dB):     -10<SC><SC>Cell ID:     07A1DA06 (128047622)<CR><LF>
+[16:53:12:170]     SINR (dB):      4.0<CR><LF>
+[16:53:12:171]     <CR><LF>
+[16:53:12:172]     OK<CR><LF>
+[16:53:12:173]     <CCo<LF>
+[16:53:12:174]     +CEREG: 2,1,"77CC","68","7A1DA06",7<CR><LF>
+[16:53:12:175] ATCModem:NetworkState (EPS) = NOT_REGISTERED_SEARCHING
+[16:53:12:176] ATCModem:+CEREG URC: tac=1 =0x1
+[16:53:12:177] ATCModem:+CEREG URC: ci=30668 =0x77cc
+[16:53:12:197]     <CR><LF>
+[16:53:12:198]     OK<CR><LF>
+[16:53:12:199]     ATParser:*** SEND (size=9) ***
+[16:53:12:200] AT+CREG?<CR>
+[16:53:12:203]     ATParser:*** SEND (size=10) ***
+[16:53:12:204] AT+CGREG?<CR>
+[16:53:12:205]     <CR><LFo
+[16:53:12:206]     +CREG: 2,1,"FFFE","7A1DA06",7<CR><LF>
+[16:53:12:207] ATCModem:NetworkState (CS) = NOT_REGISTERED_SEARCHING
+[16:53:12:208] ATCModem:+CREG URC: lac=1 =0x1
+[16:53:12:228] ATCModem:+CREG URC: ci=65534 =0xfffe
+[16:53:12:229]     <CR><LF>
+[16:53:12:230]     OK<CR><LF>
+[16:53:12:231]     <CR><LF>
+[16:53:12:231]     +CGREG: 2,4<CR><LF>
+[16:53:12:232] ATCModem:NetworkState (GPRS) = NOT_REGISTERED_SEARCHING
+[16:53:12:236] ATCModem:+CGREG URC: lac=4 =0x4
+[16:53:12:237]     <CR><LF>
+[16:53:12:238]     OK<CR><LF>
+[16:53:12:239]     ATParser:*** SEND (size=9) ***
+[16:53:12:259] AT+COPS?<CR>
+[16:53:12:260] LOG ERROR #1: channel=1 / errorId=7 / gravity=2
+[16:53:12:261] CS ERROR:<Cellular_Service> error when getting net status
+[16:53:12:261] === CST_network_status_test_mngt Fail !!! === 
+[16:53:12:262] LOG ERROR #2: channel=2 / errorId=1 / gravity=2
+[16:53:12:263] -----> New State: MODEM_REBOOT_STATE <-----
+[16:53:12:264] AUTOM TASK:  MODEM_REBOOT_STATE - NETWORK_CALLBACK_EVENT
+[16:53:12:265] *********** CST_modem_reboot_mngt ********
+[16:53:12:290] CST_modem_power_off
+[16:53:12:291]   Detach from network
+[16:53:12:292] Data<CR><LF>
+[16:53:12:293]     +COPS: 0,0,"Bouygues Telecom",7<CR><LF>
+[16:53:12:293] WP77:UNEXPECTED MESSAGE RECEIVED
+[16:53:12:294]     <CR><LF>
+[16:53:12:295]     OK<CR><LF>
+[16:53:12:296]       Power off modem
+[16:53:12:297]     SysCtrl_WP77:!!! Modem Power Off !!!

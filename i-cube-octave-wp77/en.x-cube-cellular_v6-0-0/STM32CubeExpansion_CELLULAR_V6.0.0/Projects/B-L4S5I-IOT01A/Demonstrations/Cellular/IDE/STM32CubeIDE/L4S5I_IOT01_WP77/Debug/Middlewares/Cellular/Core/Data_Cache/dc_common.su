@@ -1,0 +1,9 @@
+dc_common.c:97:17:dc_com_register_serv	24	static
+dc_common.c:136:17:dc_com_core_register_gen_event_cb	24	static
+dc_common.c:169:17:dc_com_register_gen_event_cb	24	static
+dc_common.c:203:6:dc_com_register_gen_event_cb_common	8	static
+dc_common.c:218:17:dc_com_write	32	static
+dc_common.c:272:17:dc_com_read	8	static
+dc_common.c:296:17:dc_com_write_event	24	static
+dc_common.c:331:6:dc_com_init	16	static
+dc_common.c:347:6:dc_com_start	0	static,ignoring_inline_asm

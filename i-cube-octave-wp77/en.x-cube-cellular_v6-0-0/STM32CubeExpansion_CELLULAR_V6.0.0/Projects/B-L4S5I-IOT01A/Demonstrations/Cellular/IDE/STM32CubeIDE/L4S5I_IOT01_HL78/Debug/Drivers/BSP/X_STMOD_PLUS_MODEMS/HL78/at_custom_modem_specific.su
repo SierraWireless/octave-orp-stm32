@@ -1,0 +1,13 @@
+at_custom_modem_specific.c:2977:16:display_if_active_band	16	static
+at_custom_modem_specific.c:2689:13:HL78_modem_reset.constprop	8	static
+at_custom_modem_specific.c:199:6:ATCustom_HL78_init	16	static
+at_custom_modem_specific.c:322:9:ATCustom_HL78_checkEndOfMsgCallback	16	static
+at_custom_modem_specific.c:533:13:ATCustom_HL78_getCmd	40	static
+at_custom_modem_specific.c:1980:13:ATCustom_HL78_extractElement	40	static
+at_custom_modem_specific.c:2092:17:ATCustom_HL78_analyzeCmd	24	static
+at_custom_modem_specific.c:2485:17:ATCustom_HL78_analyzeParam	24	static
+at_custom_modem_specific.c:2504:17:ATCustom_HL78_terminateCmd	16	static
+at_custom_modem_specific.c:2547:13:ATCustom_HL78_get_rsp	40	static
+at_custom_modem_specific.c:2617:13:ATCustom_HL78_get_urc	16	static
+at_custom_modem_specific.c:2635:13:ATCustom_HL78_get_error	16	static
+at_custom_modem_specific.c:2653:13:ATCustom_HL78_hw_event	0	static
