@@ -1,8 +1,0 @@
-sysctrl.c:60:18:SysCtrl_getDeviceDescriptor	24	static
-sysctrl.c:89:18:SysCtrl_open_channel	8	static
-sysctrl.c:108:18:SysCtrl_close_channel	8	static
-sysctrl.c:127:18:SysCtrl_power_on	8	static
-sysctrl.c:145:18:SysCtrl_power_off	8	static
-sysctrl.c:163:18:SysCtrl_reset_device	8	static
-sysctrl.c:183:18:SysCtrl_sim_select	16	static
-sysctrl.c:203:6:SysCtrl_delay	0	static

@@ -1,2 +1,0 @@
-at_custom_modem_api.c:45:6:atcma_init_at_func_ptrs	0	static
-at_custom_modem_api.c:64:6:atcma_init_sysctrl_func_ptrs	0	static

@@ -1,4 +1,0 @@
-error_handler.c:51:6:ERROR_Handler_Init	0	static
-error_handler.c:65:6:ERROR_Handler	40	static,ignoring_inline_asm
-error_handler.c:98:6:ERROR_Dump_All	40	static
-error_handler.c:119:6:ERROR_Dump_Last	24	static

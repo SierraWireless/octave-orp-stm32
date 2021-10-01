@@ -1,0 +1,7 @@
+14:24:18 **** Build of configuration Debug for project L4S5I_IOT01_HL78 ****
+make -j12 all 
+make: *** No rule to make target 'P:/STM/STM32_SWI/x-cube-octave-wp77/en.x-cube-cellular_v6-0-0/STM32CubeExpansion_CELLULAR_V6.0.0/Projects/Misc/Samples/CellularIoT/Src/cellular_app.c', needed by 'Misc/Samples/CellularIoT/Src/cellular_app.o'.  Stop.
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+14:24:19 Build Failed. 1 errors, 0 warnings. (took 668ms)
+

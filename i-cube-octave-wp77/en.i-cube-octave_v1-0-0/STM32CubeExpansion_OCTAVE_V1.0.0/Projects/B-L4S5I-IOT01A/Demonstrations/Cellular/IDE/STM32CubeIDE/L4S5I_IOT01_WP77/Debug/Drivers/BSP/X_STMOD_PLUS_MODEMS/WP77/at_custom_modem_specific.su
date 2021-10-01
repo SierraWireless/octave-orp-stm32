@@ -1,0 +1,12 @@
+at_custom_modem_specific.c:2344:13:WP77_modem_reset.constprop	8	static
+at_custom_modem_specific.c:193:6:ATCustom_WP77_init	16	static
+at_custom_modem_specific.c:293:9:ATCustom_WP77_checkEndOfMsgCallback	16	static
+at_custom_modem_specific.c:504:13:ATCustom_WP77_getCmd	72	static
+at_custom_modem_specific.c:1681:13:ATCustom_WP77_extractElement	16	static
+at_custom_modem_specific.c:1805:17:ATCustom_WP77_analyzeCmd	24	static
+at_custom_modem_specific.c:2141:17:ATCustom_WP77_analyzeParam	24	static
+at_custom_modem_specific.c:2160:17:ATCustom_WP77_terminateCmd	16	static
+at_custom_modem_specific.c:2203:13:ATCustom_WP77_get_rsp	24	static
+at_custom_modem_specific.c:2272:13:ATCustom_WP77_get_urc	16	static
+at_custom_modem_specific.c:2290:13:ATCustom_WP77_get_error	16	static
+at_custom_modem_specific.c:2308:13:ATCustom_WP77_hw_event	0	static

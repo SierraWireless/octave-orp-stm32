@@ -1,8 +1,0 @@
-sysctrl_specific.c:79:18:SysCtrl_WP77_getDeviceDescriptor	40	static
-sysctrl_specific.c:118:18:SysCtrl_WP77_open_channel	8	static
-sysctrl_specific.c:149:18:SysCtrl_WP77_close_channel	8	static
-sysctrl_specific.c:167:18:SysCtrl_WP77_power_on	8	static
-sysctrl_specific.c:198:18:SysCtrl_WP77_power_off	8	static
-sysctrl_specific.c:232:18:SysCtrl_WP77_reset	8	static
-sysctrl_specific.c:265:18:SysCtrl_WP77_sim_select	8	static
-sysctrl_specific.c:344:18:SysCtrl_WP77_wakeup_from_PSM	8	static

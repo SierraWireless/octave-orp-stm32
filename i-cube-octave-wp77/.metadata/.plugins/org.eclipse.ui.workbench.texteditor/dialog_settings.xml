@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="IP"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="IP"/>
+			<item value="SET_CELLULAR_APP_MSG_TYPE"/>
+			<item value="SENSORSCLIENT_CELLULAR_MSG"/>
+			<item value="DNS"/>
+			<item value="Socket"/>
+			<item value="case CMD_AT_COPS:"/>
+			<item value="IP Add"/>
+			<item value="TODO STM: If a URC is received before subscription,"/>
+			<item value="sensors_cellular_info"/>
+			<item value="operator_name_length"/>
+			<item value="ip_string"/>
+			<item value="sensorsclient_update_sensors_info"/>
+			<item value="CELLULAR_APP_SENSORSCLIENT_TIMER_IDLE"/>
+			<item value="SENSORSCLIENT_SENSORS_READ_TIMER"/>
+			<item value="raw"/>
+		</list>
+		<list key="replacehistory">
+			<item value="orp_update"/>
+			<item value="orp_resource_create_t"/>
+			<item value="PRINT_INFO"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1536"/>
+		<item key="DIALOG_Y_ORIGIN" value="132"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,6 +1,0 @@
-ipc_rxfifo.c:78:6:IPC_RXFIFO_init	8	static
-ipc_rxfifo.c:276:10:IPC_RXFIFO_getFreeBytes	0	static
-ipc_rxfifo.c:430:13:RXFIFO_incrementHead	8	static
-ipc_rxfifo.c:104:6:IPC_RXFIFO_writeCharacter	16	static
-ipc_rxfifo.c:301:6:IPC_RXFIFO_readMsgHeader_at_pos	24	static
-ipc_rxfifo.c:149:9:IPC_RXFIFO_read	32	static

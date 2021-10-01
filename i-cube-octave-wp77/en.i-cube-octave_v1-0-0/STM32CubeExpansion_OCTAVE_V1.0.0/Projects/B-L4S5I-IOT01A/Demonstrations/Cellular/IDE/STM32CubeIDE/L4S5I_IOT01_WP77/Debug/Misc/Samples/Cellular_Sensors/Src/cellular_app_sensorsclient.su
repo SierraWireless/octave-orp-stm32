@@ -1,0 +1,10 @@
+cellular_app_sensorsclient.c:185:13:sensorsclient_update_cellular_info	376	static
+cellular_app_sensorsclient.c:160:13:cellular_app_sensorsclient_sensors_timer_cb	16	static
+cellular_app_sensorsclient.c:132:13:cellular_app_sensorsclient_cellular_info_status_cb	16	static
+cellular_app_sensorsclient.c:632:6:cellular_app_sensorsclient_send_msg	16	static
+cellular_app_sensorsclient.c:654:6:cellular_app_sensorsclient_init	16	static
+cellular_app_sensorsclient.c:695:6:cellular_app_sensorsclient_start	32	static
+cellular_app_sensorsclient.c:751:6:orp_callback	24	static
+cellular_app_sensorsclient.c:786:6:orp_start	40	static
+cellular_app_sensorsclient.c:365:13:sensorsclient_update_sensors_info	448	static
+cellular_app_sensorsclient.c:513:13:sensorsclient_thread	32	static,ignoring_inline_asm

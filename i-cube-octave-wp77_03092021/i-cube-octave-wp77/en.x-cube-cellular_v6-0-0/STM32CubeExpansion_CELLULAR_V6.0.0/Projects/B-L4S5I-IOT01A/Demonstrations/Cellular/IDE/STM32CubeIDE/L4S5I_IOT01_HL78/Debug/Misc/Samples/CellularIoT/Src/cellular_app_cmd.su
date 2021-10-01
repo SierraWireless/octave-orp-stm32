@@ -1,6 +1,0 @@
-cellular_app_cmd.c:809:13:cellular_app_cmd_echoclient_help	24	static
-cellular_app_cmd.c:853:13:cellular_app_cmd_pingclient_help	8	static
-cellular_app_cmd.c:796:13:cellular_app_cmd_help	8	static
-cellular_app_cmd.c:740:21:cellular_app_cmd_cb	96	static,ignoring_inline_asm
-cellular_app_cmd.c:877:6:cellular_app_cmd_init	0	static,ignoring_inline_asm
-cellular_app_cmd.c:888:6:cellular_app_cmd_start	8	static

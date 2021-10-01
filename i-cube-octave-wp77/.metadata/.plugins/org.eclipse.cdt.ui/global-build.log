@@ -1,0 +1,7 @@
+15:40:55 **** Incremental Build of configuration Debug for project L4S5I_IOT01_WP77 ****
+make -j12 all 
+arm-none-eabi-size   L4S5I_IOT01_WP77.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 184232	   4068	  36808	 225108	  36f54	L4S5I_IOT01_WP77.elf
+Finished building: default.size.stdout
+ 
