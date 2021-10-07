@@ -384,24 +384,24 @@ ca_access_techno_t cst_convert_access_techno(CS_AccessTechno_t access_techno)
   * @retval -
   */
 
-/******Ashu Modification******/
+
 void  CST_modem_sim_init(void)
 {
   /* When updating this array, do not forget to update the value of MMCMNC_APN_MAX */
   static mmcmnc_apn_t mmcmnc_apn_a[MMCMNC_APN_MAX] =
   {
-    /* { MMC/MNC, APN, username, password } */
-    {"00101", "default", "", ""},
-    {"20810", "websfr", "", ""}, /* SFR France 20810 -> websfr*/
-	//{"20801", "orange.fr", "", ""}, /* Orange France 20801 -> orange.fr*/
-	{"20801", "orange.ltem.spec", "", ""},/* Orange M2M France 20801 -> orange.ltem.spec*/
-	{"20820", "mmsbouygtel.com", "", ""}, /* Bouygues 20820 -> mmsbouygtel.com*/
+    /* { MCC/MNC, APN, username, password } */
+/*    {"00101", "default", "", ""},
+    {"20810", "websfr", "", ""},  SFR France 20810 -> websfr
+	{"20801", "orange.fr", "", ""},  Orange France 20801 -> orange.fr
+	{"20801", "orange.ltem.spec", "", ""}, Orange M2M France 20801 -> orange.ltem.spec
+	{"20820", "mmsbouygtel.com", "", ""},  Bouygues 20820 -> mmsbouygtel.com
 	{"20824", "iot.swir", "", ""},
     {"29510", "soracom.io", "sora", "sora"},
     {"23425", "iot.truphone.com", "", ""},
-    {"29505", "EM", "", ""},
+    {"29505", "EM", "", ""},*/
   };
-  /******Ashu Modification******/
+
 
   CS_Status_t cs_status;
   cs_status = CELLULAR_OK;
@@ -457,16 +457,19 @@ Reboot modem for modem to use the newly selected sim slot\n\r")
       /* first check SIM presence */
       CS_DeviceInfo_t cst_imsi_info;
       cs_status = osCDS_init_modem(CS_CMI_SIM_ONLY, CELLULAR_FALSE, PLF_CELLULAR_SIM_PINCODE);
-      if ((cst_cellular_params.sim_slot[cst_context.sim_slot_index].apnSendToModem !=
+      cst_cellular_params.sim_slot[cst_context.sim_slot_index].apnSendToModem =CA_APN_NOT_SEND_TO_MODEM;
+      /* write new information to datacache */
+      (void)dc_com_write(&dc_com_db, DC_CELLULAR_CONFIG, (void *)&cst_cellular_params, sizeof(cst_cellular_params));
+     /* if ((cst_cellular_params.sim_slot[cst_context.sim_slot_index].apnSendToModem !=
            (cellular_apn_send_to_modem_t)CA_APN_SEND_TO_MODEM) &&
           (cst_cellular_params.sim_slot[cst_context.sim_slot_index].apnSendToModem !=
            (cellular_apn_send_to_modem_t)CA_APN_NOT_SEND_TO_MODEM))
       {
         cst_cellular_params.sim_slot[cst_context.sim_slot_index].apnSendToModem =
           (cellular_apn_send_to_modem_t)CA_APN_SEND_TO_MODEM;
-        /* write new information to datacache */
+         write new information to datacache
         (void)dc_com_write(&dc_com_db, DC_CELLULAR_CONFIG, (void *)&cst_cellular_params, sizeof(cst_cellular_params));
-      }
+      }*/
       if (cs_status == CELLULAR_OK)
       {
         /* if SIM Present then read IMSI */

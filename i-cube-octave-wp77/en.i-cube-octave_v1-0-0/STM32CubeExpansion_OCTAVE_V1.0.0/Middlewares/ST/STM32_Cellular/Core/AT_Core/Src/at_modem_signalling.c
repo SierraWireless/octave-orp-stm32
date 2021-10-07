@@ -703,10 +703,10 @@ at_status_t fCmdBuild_CGEREP(atparser_context_t *p_atp_ctxt,
 	return (retval);
 }
 
-/****** Ashu Moved the default empty string to "iot.swir" *******/
-#define APN_EMPTY_STRING "iot.swir"
 
-/****** Ashu Modification Ends *********/
+#define APN_EMPTY_STRING ""
+
+
 at_status_t fCmdBuild_CGDCONT(atparser_context_t *p_atp_ctxt,
 		atcustom_modem_context_t *p_modem_ctxt) {
 	at_status_t retval = ATSTATUS_OK;
