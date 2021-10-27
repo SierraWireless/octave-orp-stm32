@@ -5,4 +5,4 @@ I-cube-octave binds together the capabilities of STM32L4 MCU and Sierra's Octave
 
 How to get started:
 - If you have not done so, register for access to the Octave+STM32 evaluation kit (add dev kit here)
-- Follow the getting started here : https://github.com/SierraWireless/octave-orp-stm32/blob/Release_01/Release_Notes_V1.pdf
+- Follow the [Getting Started](https://github.com/SierraWireless/octave-orp-stm32/blob/Release_01/Release_Notes_V1.pdf)
